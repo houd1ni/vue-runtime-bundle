@@ -2,7 +2,7 @@
 Vue and friends bundle for embedded in-browser development.
 **Fits for migrations to vue!**
 
-[![Build Status](https://circleci.com/gh/houd1ni/vue-runtime-bundle/tree/master.svg?style=shield)](https://circleci.com/gh/houd1ni/vue-runtime-bundle/tree/master) [![codecov](https://codecov.io/gh/houd1ni/vue-runtime-bundle/branch/master/graph/badge.svg)](https://codecov.io/gh/houd1ni/vue-runtime-bundle) [![bundlephobia](https://badgen.net/bundlephobia/minzip/vue-runtime-bundle)](https://bundlephobia.com/result?p=vue-runtime-bundle)  [![npm](https://badgen.net/npm/v/vue-runtime-bundle)](https://www.npmjs.com/package/vue-runtime-bundle) [![Deps](https://david-dm.org/houd1ni/vue-runtime-bundle.svg)](https://david-dm.org/houd1ni/vue-runtime-bundle) [![DevDeps](https://david-dm.org/houd1ni/vue-runtime-bundle/dev-status.svg)](https://david-dm.org/houd1ni/vue-runtime-bundle)
+[![bundlephobia](https://badgen.net/bundlephobia/minzip/vue-runtime-bundle)](https://bundlephobia.com/result?p=vue-runtime-bundle)  [![npm](https://badgen.net/npm/v/vue-runtime-bundle)](https://www.npmjs.com/package/vue-runtime-bundle) [![Deps](https://david-dm.org/houd1ni/vue-runtime-bundle.svg)](https://david-dm.org/houd1ni/vue-runtime-bundle) [![DevDeps](https://david-dm.org/houd1ni/vue-runtime-bundle/dev-status.svg)](https://david-dm.org/houd1ni/vue-runtime-bundle)
 
 **Allows easily scaffold an embedded application with Vue, VueRouter, and optionally fela-vue or literal css.**
 
