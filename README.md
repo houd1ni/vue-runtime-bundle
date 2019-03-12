@@ -14,7 +14,7 @@ Included:
 
 ## USAGE
 
-See [Test Example](https://david-dm.org/houd1ni/vue-runtime-bundle/tree/master/test/)
+See [Test Example](https://github.com/houd1ni/vue-runtime-bundle/tree/master/test/)
 
 **I suggest to use fela-vue 'cause it has all production stuff and could be easily adopted after migration to, for instance, vue-cli builds.**
 
