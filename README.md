@@ -22,6 +22,6 @@ Common principle is:
 - Include `dist/fela.js`(recommended) or `dist/lit.js` or `dist/all.js`(to play with).
 - Make your components according to
   - Either [fela-vue](https://github.com/houd1ni/fela-vue) documentation.
-  - Or the example above using css`...` or cssinject`...` literals. 
-  - and html`here goes your vue template` as a template field of them.
+  - Or the example above using css\`...\` or cssinject\`...\` literals. 
+  - and html\`here goes your vue template\` as a template field of them.
 - Do `new Vue()`.
