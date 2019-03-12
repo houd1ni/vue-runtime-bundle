@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <title>Vue runtime bundle test.</title>
+  </head>
+  <body>
+    <div class="test">test div.</div>
+    <script src="../dist/all.js"></script>
+    <script>
+      (() => {
+        // Component, using fela here.
+        const { html, cssinject } = RUNTIME.literals
+        const { Vue, VueRouter } = RUNTIME
+
+        const Three = Vue.extend({
+          template: html`
+            <div :class="f('root')">
+              Three
+            </div>
+          `,
+          computed: {
+            style() {
+              return {
+                root: {
+                  color: 'green'
+                }
+              }
+            }
+          }
+        })
+
+        ;(() => {
+          // This is in main file / namespace.
+          // Using css and cssinject here.
+          // Regulary, you should pick only one of them.
+          const { html, css, cssinject } = RUNTIME.literals
+          const { Vue, VueRouter } = RUNTIME
+
+          // fela-vue mixin.
+          Vue.mixin(RUNTIME.fela.mixin)
+
+          // In regular components (not main)
+          // could be var and below the component definition.
+
+          // Instantly mounts.
+          cssinject`
+            .one {
+              color: red
+            }
+          `
+
+          // More in control.
+          const style = css`
+            .two {
+              color: grey
+            }
+            .fuck {
+              font-size: 30pt
+            }
+          `
+
+          new Vue({
+            el: '.test',
+            components: {
+              Three
+            },
+            data() {
+              return {
+                style
+              }
+            },
+            mounted() {
+              // true -> mount with scoped prefix.
+              this.style.mount(true)
+            },
+            destroyed() {
+              // optionally.
+              this.style.unmount()
+            },
+            template: html`
+              <div :class="[style.root, 'root']">
+                <div class="one">
+                  One
+                  <div class="two">Two</div>
+                  <Three />
+                </div>
+                <div class="fuck"> FUUUCK </div>
+              </div>
+            `
+          })
+        })();
+      })()
+    </script>
+  </body>
+</html>
