@@ -1,6 +1,6 @@
 {
   "name": "vue-runtime-bundle",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": {
     "name": "Michael Akiliev"
   },
@@ -37,7 +37,7 @@
     "build:dev": "cross-env NODE_ENV=development ALL=yes rollup -c --environment INCLUDE_DEPS,BUILD:development"
   },
   "dependencies": {
-    "fela-vue": "^2.0.2",
+    "fela-vue": "^2.1.1",
     "vue": "^2.6.8",
     "vue-router": "^3.0.2"
   },
