@@ -1,6 +1,6 @@
 {
   "name": "vue-runtime-bundle",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "author": {
     "name": "Michael Akiliev"
   },
@@ -37,24 +37,24 @@
     "build:dev": "cross-env NODE_ENV=development ALL=yes rollup -c --environment INCLUDE_DEPS,BUILD:development"
   },
   "dependencies": {
-    "fela-vue": "^2.1.1",
-    "vue": "^2.6.8",
+    "fela-vue": "^2.5.1",
+    "vue": "^2.6.10",
     "vue-router": "^3.0.2"
   },
   "devDependencies": {
-    "@types/ramda": "^0.26.3",
+    "@types/ramda": "^0.26.5",
     "cross-env": "^5.2.0",
     "directory-named-webpack-plugin": "^4.0.1",
-    "rollup": "^1.6.0",
+    "rollup": "^1.7.3",
     "rollup-plugin-alias": "^1.5.1",
-    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-commonjs": "^9.2.2",
     "rollup-plugin-node-resolve": "^4.0.1",
-    "rollup-plugin-replace": "^2.1.0",
+    "rollup-plugin-replace": "^2.1.1",
     "rollup-plugin-resolve-aliases": "^0.2.0",
     "rollup-plugin-terser": "4.0.4",
-    "rollup-plugin-typescript2": "^0.20.0",
+    "rollup-plugin-typescript2": "^0.20.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "typescript": "^3.3.3333"
+    "typescript": "^3.3.4000"
   }
 }

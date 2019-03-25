@@ -35,7 +35,8 @@
           // Using css and cssinject here.
           // Regulary, you should pick only one of them.
           const { html, css, cssinject } = RUNTIME.literals
-          const { Vue, VueRouter } = RUNTIME
+          // felaCss is fela-vue's css`...`
+          const { Vue, VueRouter, felaCss } = RUNTIME
 
           // fela-vue mixin.
           Vue.mixin(RUNTIME.fela.mixin)
