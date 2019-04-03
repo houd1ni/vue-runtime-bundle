@@ -16,7 +16,7 @@ export default {
     format: 'cjs',
     name: 'vue-runtime-bundle',
   },
-  sourcemap: process.env.BUILD == 'development',
+  sourcemap: process.env.NODE_ENV == 'development',
   plugins: [
     resolve(),
     commonjs(),
@@ -26,13 +26,13 @@ export default {
       tsconfigOverride: {
         compilerOptions: {
           sourceMap: false,
-          inlineSourceMap: process.env.BUILD == 'development'
+          inlineSourceMap: process.env.NODE_ENV == 'development'
         }
       }
     }),
     terser(),
     replace({
-      'process.env.NODE_ENV': JSON.stringify(process.env.BUILD)
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })
   ]
 }

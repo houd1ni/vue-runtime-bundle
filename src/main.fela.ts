@@ -1,6 +1,5 @@
 
-import Vue from 'vue'
-// import Vue from 'vue/dist/vue.esm.browser' non-production
+import Vue from 'vue/dist/vue.esm.browser'
 import VueRouter from 'vue-router'
 import { Renderer, css } from 'fela-vue'
 import { html } from './literals'
