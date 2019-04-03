@@ -3,7 +3,10 @@ import Vue from 'vue/dist/vue.esm.browser'
 import VueRouter from 'vue-router'
 import { html, css, cssinject } from './literals'
 
-Vue.config.productionTip = false
+Object.assign(Vue.config, {
+    productionTip: false,
+    devtools: false
+})
 
 ;(window as any).RUNTIME = {
   Vue,

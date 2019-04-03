@@ -4,7 +4,10 @@ import VueRouter from 'vue-router'
 import { Renderer, css } from 'fela-vue'
 import { html } from './literals'
 
-Vue.config.productionTip = false
+Object.assign(Vue.config, {
+  productionTip: false,
+  devtools: false
+})
 
 ;(window as any).RUNTIME = {
   Vue,
