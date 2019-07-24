@@ -71,12 +71,12 @@ class CSS {
   }
 }
 
-const css = (_stylesheet: string[], ...vars: any[]) => {
-  return new CSS(_stylesheet, vars)
+const css = (_stylesheet: TemplateStringsArray, ...vars: any[]) => {
+  return new CSS(Array.from(_stylesheet), vars)
 }
 
-const cssinject = async (_stylesheet: string[], ...vars: any[]) => {
-  const css = new CSS(_stylesheet, vars)
+const cssinject = async (_stylesheet: TemplateStringsArray, ...vars: any[]) => {
+  const css = new CSS(Array.from(_stylesheet), vars)
   await css.mount()
 }
 
