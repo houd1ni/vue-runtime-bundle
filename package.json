@@ -54,7 +54,7 @@
     "rollup-plugin-terser": "5.1.1",
     "rollup-plugin-typescript2": "^0.22.0",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
+    "stylus-loader": "^7.1.0",
     "typescript": "^3.5.3"
   }
 }
